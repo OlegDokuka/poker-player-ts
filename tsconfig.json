@@ -1,0 +1,16 @@
+{
+    "version": "1.8.10",
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "es5",
+        "sourceMap": true,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "outDir": "out"
+    },
+    "exclude": [
+        "out/*",
+        "typings",
+        "node_modules"
+    ]
+}

@@ -1,0 +1,10 @@
+.vscode/
+.idea/
+node_modules/
+bower_components/
+*.log
+tmp/
+typings/
+out/
+web
+.sw[a-z]
