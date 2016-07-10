@@ -18,10 +18,10 @@ app.get('/', ({}, res) => res.send(200, 'OK'));
 app.post('/', function (req, res) {
     if (req.body.action === 'bet_request') {
         const bet = betService.process(JSON.parse(req.body.game_state));
-        res.send(200, bet.toString());
+        res.status(200).send(bet.toString());
     } else if (req.body.action === 'showdown') {
         showdownService.process(JSON.parse(req.body.game_state));
-        res.send(200, 'OK');
+        res.status(200).send('OK');
     } else if (req.body.action === 'version') {
         res.send(200, VERSION);
     } else {

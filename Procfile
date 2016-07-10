@@ -1,1 +1,1 @@
-web: ./node_modules/typescript/bin/tsc -p ./ && node out/index.js
+web: npm start
