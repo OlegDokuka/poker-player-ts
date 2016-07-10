@@ -5,7 +5,7 @@ TypeScript client skeleton for Lean Poker For more information visit: http://lea
 
 #How to get started 
 
-```
+```bash
 $ npm install
 $ npm run bootRun
 ```
