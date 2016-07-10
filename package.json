@@ -4,13 +4,16 @@
     "version": "0.0.1",
     "private": true,
     "scripts": {
-        "bootRun": "./node_modules/typescript/bin/tsc -p ./ && node out/index.js"
+        "postinstall": "rm -rf out && rm -rf typings && typings i",
+        "start": "npm run bootRun",
+        "bootRun": "tsc -p ./ && node out/index.js"
     },
     "dependencies": {
         "express": "4.14.0",
         "body-parser": "1.15.2"
     },
     "devDependencies": {
+        "typings": "latest",
         "typescript": "^1.8.10"
     }
 }
