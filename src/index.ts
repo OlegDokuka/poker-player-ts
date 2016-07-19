@@ -21,9 +21,9 @@ app.post('/', (req, res) => {
         player.showdown(JSON.parse(req.body.game_state));
         res.status(200).send('OK');
     } else if (req.body.action === 'version') {
-        res.send(200, VERSION);
+        res.status(200).send(VERSION);
     } else {
-        res.send(200, 'OK');
+        res.status(200).send('OK');
     }
 });
 
