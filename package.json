@@ -6,7 +6,7 @@
     "scripts": {
         "postinstall": "npm run build",
         "start": "node out/index.js",
-        "build": "typings i && tsc -p ./"
+        "build": "./node_modules/.bin/typings i && ./node_modules/.bin/tsc -p ./"
     },
     "dependencies": {
         "express": "4.14.0",
