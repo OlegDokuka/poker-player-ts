@@ -4,6 +4,7 @@
     "version": "0.0.1",
     "private": true,
     "scripts": {
+        "postinstall": "npm run build",
         "start": "node out/index.js",
         "build": "typings i && tsc -p ./"
     },
