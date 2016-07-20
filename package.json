@@ -6,8 +6,6 @@
     "scripts": {
         "postinstall": "npm run build",
         "start": "node out/index.js",
-        "installGlobals": ""
-        ""
         "build": "./node_modules/.bin/typings i && ./node_modules/.bin/tsc -p ./"
     },
     "dependencies": {
