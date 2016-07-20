@@ -4,7 +4,7 @@
     "version": "0.0.1",
     "private": true,
     "scripts": {
-        "postinstall": "rm -rf out && rm -rf typings && typings i",
+        "postinstall": "typings i",
         "start": "npm run bootRun",
         "bootRun": "tsc -p ./ && node out/index.js"
     },
