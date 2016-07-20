@@ -15,5 +15,8 @@
     "devDependencies": {
         "typings": "latest",
         "typescript": "^1.8.10"
+    },
+    "engines": {
+        "node": ">=4.4.7"
     }
 }
