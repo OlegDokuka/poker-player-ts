@@ -4,8 +4,10 @@
     "version": "0.0.1",
     "private": true,
     "scripts": {
-        "postinstall": "npm i -g typings && npm run build",
+        "postinstall": "npm run build",
         "start": "node out/index.js",
+        "installGlobals": ""
+        ""
         "build": "./node_modules/.bin/typings i && ./node_modules/.bin/tsc -p ./"
     },
     "dependencies": {
