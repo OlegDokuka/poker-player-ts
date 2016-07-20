@@ -5,10 +5,8 @@
     "private": true,
     "scripts": {
         "postinstall": "npm run build",
-        "installGlobals": "",
-        "installTypings": "npm i -g typings",
         "start": "node out/index.js",
-        "build": "ls ./node_modules/ && ./node_modules/.bin/tsc -p ./"
+        "build": "./node_modules/.bin/typings i && ./node_modules/.bin/tsc -p ./"
     },
     "dependencies": {
         "express": "4.14.0",
