@@ -1,1 +1,2 @@
-web: npm start
+worker: npm build
+web: node ./out/index.js
